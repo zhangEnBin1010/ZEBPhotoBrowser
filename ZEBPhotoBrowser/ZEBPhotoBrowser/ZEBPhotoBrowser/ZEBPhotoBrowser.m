@@ -428,7 +428,7 @@
     }];
 }
 - (void)zebPhotoBrowserCellLongPress:(ZEBPhotoBrowserCell *)cell photo:(Photo *)photo image:(UIImage *)image {
-    
+    self.longPressBlock(image);
 }
 #pragma mark -
 #pragma mark  photomodel

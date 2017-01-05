@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 typedef void(^ __nullable DismissBlock)(UIImage * __nullable image, NSInteger index);
+typedef void(^ __nullable LongPressBlock)(UIImage * __nullable image);
 
 @interface ZEBPhotoBrowser : UIView
 
@@ -49,5 +50,5 @@ typedef void(^ __nullable DismissBlock)(UIImage * __nullable image, NSInteger in
 + (nonnull instancetype)showFromImageView:(nullable UIImageView *)imageView withImages:(nullable NSArray *)images atIndex:(NSInteger)index dismiss:(DismissBlock)block;
 
 @property (nonatomic, strong, nullable) UIImage *placeholderImage;
-
+@property (nonatomic, copy) LongPressBlock longPressBlock;
 @end
