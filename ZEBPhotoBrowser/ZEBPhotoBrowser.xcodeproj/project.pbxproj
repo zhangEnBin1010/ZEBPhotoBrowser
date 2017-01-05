@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		360FFD46C5BA76CF811748E4 /* libPods-ZEBPhotoBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC031424846514A3DA521FB3 /* libPods-ZEBPhotoBrowser.a */; };
+		93593D031E1E5A0F00E94869 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93593D021E1E5A0F00E94869 /* main.m */; };
+		93593D061E1E5A0F00E94869 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93593D051E1E5A0F00E94869 /* AppDelegate.m */; };
+		93593D0E1E1E5A0F00E94869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93593D0D1E1E5A0F00E94869 /* Assets.xcassets */; };
+		93593D111E1E5A0F00E94869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93593D0F1E1E5A0F00E94869 /* LaunchScreen.storyboard */; };
+		93593D1C1E1E5A1300E94869 /* ZEBPhotoBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93593D1B1E1E5A1300E94869 /* ZEBPhotoBrowserTests.m */; };
+		93593D271E1E5A1500E94869 /* ZEBPhotoBrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93593D261E1E5A1500E94869 /* ZEBPhotoBrowserUITests.m */; };
+		93593D371E1E5A3600E94869 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93593D351E1E5A3600E94869 /* ViewController.m */; };
+		93593D381E1E5A3600E94869 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93593D361E1E5A3600E94869 /* Main.storyboard */; };
+		93593D791E1E5A5300E94869 /* ZEBPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 93593D611E1E5A5300E94869 /* ZEBPhotoBrowser.m */; };
+		93593D7A1E1E5A5300E94869 /* ZEBPhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93593D631E1E5A5300E94869 /* ZEBPhotoBrowserCell.m */; };
+		93593D841E1E5AC500E94869 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 93593D7E1E1E5AC500E94869 /* Photo.m */; };
+		93593D851E1E5AC500E94869 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 93593D801E1E5AC500E94869 /* UIView+frame.m */; };
+		93593D861E1E5AC500E94869 /* ZEBToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 93593D831E1E5AC500E94869 /* ZEBToast.m */; };
+		93593D891E1E5AD300E94869 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93593D881E1E5AD300E94869 /* PhotoCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93593D181E1E5A1300E94869 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93593CF61E1E5A0F00E94869 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93593CFD1E1E5A0F00E94869;
+			remoteInfo = ZEBPhotoBrowser;
+		};
+		93593D231E1E5A1400E94869 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93593CF61E1E5A0F00E94869 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93593CFD1E1E5A0F00E94869;
+			remoteInfo = ZEBPhotoBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1851A4509E09A85E73E0E38B /* Pods-ZEBPhotoBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZEBPhotoBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZEBPhotoBrowser/Pods-ZEBPhotoBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+		52C938D57EA031D6F34697EA /* Pods-ZEBPhotoBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZEBPhotoBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZEBPhotoBrowser/Pods-ZEBPhotoBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		93593CFE1E1E5A0F00E94869 /* ZEBPhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZEBPhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93593D021E1E5A0F00E94869 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93593D041E1E5A0F00E94869 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		93593D051E1E5A0F00E94869 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		93593D0D1E1E5A0F00E94869 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93593D101E1E5A0F00E94869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93593D121E1E5A0F00E94869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93593D171E1E5A1300E94869 /* ZEBPhotoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZEBPhotoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93593D1B1E1E5A1300E94869 /* ZEBPhotoBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZEBPhotoBrowserTests.m; sourceTree = "<group>"; };
+		93593D1D1E1E5A1400E94869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93593D221E1E5A1400E94869 /* ZEBPhotoBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZEBPhotoBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93593D261E1E5A1500E94869 /* ZEBPhotoBrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZEBPhotoBrowserUITests.m; sourceTree = "<group>"; };
+		93593D281E1E5A1500E94869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93593D341E1E5A3600E94869 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		93593D351E1E5A3600E94869 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		93593D361E1E5A3600E94869 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		93593D601E1E5A5300E94869 /* ZEBPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZEBPhotoBrowser.h; sourceTree = "<group>"; };
+		93593D611E1E5A5300E94869 /* ZEBPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZEBPhotoBrowser.m; sourceTree = "<group>"; };
+		93593D621E1E5A5300E94869 /* ZEBPhotoBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZEBPhotoBrowserCell.h; sourceTree = "<group>"; };
+		93593D631E1E5A5300E94869 /* ZEBPhotoBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZEBPhotoBrowserCell.m; sourceTree = "<group>"; };
+		93593D7D1E1E5AC500E94869 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		93593D7E1E1E5AC500E94869 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		93593D7F1E1E5AC500E94869 /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		93593D801E1E5AC500E94869 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		93593D811E1E5AC500E94869 /* ZEB_const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZEB_const.h; sourceTree = "<group>"; };
+		93593D821E1E5AC500E94869 /* ZEBToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZEBToast.h; sourceTree = "<group>"; };
+		93593D831E1E5AC500E94869 /* ZEBToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZEBToast.m; sourceTree = "<group>"; };
+		93593D871E1E5AD300E94869 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		93593D881E1E5AD300E94869 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		FC031424846514A3DA521FB3 /* libPods-ZEBPhotoBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZEBPhotoBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93593CFB1E1E5A0F00E94869 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360FFD46C5BA76CF811748E4 /* libPods-ZEBPhotoBrowser.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93593D141E1E5A1300E94869 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93593D1F1E1E5A1400E94869 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93593CF51E1E5A0F00E94869 = {
+			isa = PBXGroup;
+			children = (
+				93593D001E1E5A0F00E94869 /* ZEBPhotoBrowser */,
+				93593D1A1E1E5A1300E94869 /* ZEBPhotoBrowserTests */,
+				93593D251E1E5A1400E94869 /* ZEBPhotoBrowserUITests */,
+				93593CFF1E1E5A0F00E94869 /* Products */,
+				960C082FFB45A95472063361 /* Pods */,
+				A0695017F2910D11AC345703 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		93593CFF1E1E5A0F00E94869 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93593CFE1E1E5A0F00E94869 /* ZEBPhotoBrowser.app */,
+				93593D171E1E5A1300E94869 /* ZEBPhotoBrowserTests.xctest */,
+				93593D221E1E5A1400E94869 /* ZEBPhotoBrowserUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93593D001E1E5A0F00E94869 /* ZEBPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				93593D871E1E5AD300E94869 /* PhotoCell.h */,
+				93593D881E1E5AD300E94869 /* PhotoCell.m */,
+				93593D7C1E1E5AC500E94869 /* tool */,
+				93593D391E1E5A5300E94869 /* ZEBPhotoBrowser */,
+				93593D041E1E5A0F00E94869 /* AppDelegate.h */,
+				93593D051E1E5A0F00E94869 /* AppDelegate.m */,
+				93593D341E1E5A3600E94869 /* ViewController.h */,
+				93593D351E1E5A3600E94869 /* ViewController.m */,
+				93593D361E1E5A3600E94869 /* Main.storyboard */,
+				93593D0D1E1E5A0F00E94869 /* Assets.xcassets */,
+				93593D0F1E1E5A0F00E94869 /* LaunchScreen.storyboard */,
+				93593D121E1E5A0F00E94869 /* Info.plist */,
+				93593D011E1E5A0F00E94869 /* Supporting Files */,
+			);
+			path = ZEBPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		93593D011E1E5A0F00E94869 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93593D021E1E5A0F00E94869 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93593D1A1E1E5A1300E94869 /* ZEBPhotoBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				93593D1B1E1E5A1300E94869 /* ZEBPhotoBrowserTests.m */,
+				93593D1D1E1E5A1400E94869 /* Info.plist */,
+			);
+			path = ZEBPhotoBrowserTests;
+			sourceTree = "<group>";
+		};
+		93593D251E1E5A1400E94869 /* ZEBPhotoBrowserUITests */ = {
+			isa = PBXGroup;
+			children = (
+				93593D261E1E5A1500E94869 /* ZEBPhotoBrowserUITests.m */,
+				93593D281E1E5A1500E94869 /* Info.plist */,
+			);
+			path = ZEBPhotoBrowserUITests;
+			sourceTree = "<group>";
+		};
+		93593D391E1E5A5300E94869 /* ZEBPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				93593D601E1E5A5300E94869 /* ZEBPhotoBrowser.h */,
+				93593D611E1E5A5300E94869 /* ZEBPhotoBrowser.m */,
+				93593D621E1E5A5300E94869 /* ZEBPhotoBrowserCell.h */,
+				93593D631E1E5A5300E94869 /* ZEBPhotoBrowserCell.m */,
+			);
+			path = ZEBPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		93593D7C1E1E5AC500E94869 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				93593D7D1E1E5AC500E94869 /* Photo.h */,
+				93593D7E1E1E5AC500E94869 /* Photo.m */,
+				93593D7F1E1E5AC500E94869 /* UIView+frame.h */,
+				93593D801E1E5AC500E94869 /* UIView+frame.m */,
+				93593D811E1E5AC500E94869 /* ZEB_const.h */,
+				93593D821E1E5AC500E94869 /* ZEBToast.h */,
+				93593D831E1E5AC500E94869 /* ZEBToast.m */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		960C082FFB45A95472063361 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1851A4509E09A85E73E0E38B /* Pods-ZEBPhotoBrowser.debug.xcconfig */,
+				52C938D57EA031D6F34697EA /* Pods-ZEBPhotoBrowser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A0695017F2910D11AC345703 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC031424846514A3DA521FB3 /* libPods-ZEBPhotoBrowser.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93593CFD1E1E5A0F00E94869 /* ZEBPhotoBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93593D2B1E1E5A1500E94869 /* Build configuration list for PBXNativeTarget "ZEBPhotoBrowser" */;
+			buildPhases = (
+				8994BE2FF7C99356F737B114 /* [CP] Check Pods Manifest.lock */,
+				93593CFA1E1E5A0F00E94869 /* Sources */,
+				93593CFB1E1E5A0F00E94869 /* Frameworks */,
+				93593CFC1E1E5A0F00E94869 /* Resources */,
+				87A95DD9D2BA4580DE112AD8 /* [CP] Embed Pods Frameworks */,
+				6E5546FCBF2FF973CBC34034 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZEBPhotoBrowser;
+			productName = ZEBPhotoBrowser;
+			productReference = 93593CFE1E1E5A0F00E94869 /* ZEBPhotoBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93593D161E1E5A1300E94869 /* ZEBPhotoBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93593D2E1E1E5A1500E94869 /* Build configuration list for PBXNativeTarget "ZEBPhotoBrowserTests" */;
+			buildPhases = (
+				93593D131E1E5A1300E94869 /* Sources */,
+				93593D141E1E5A1300E94869 /* Frameworks */,
+				93593D151E1E5A1300E94869 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93593D191E1E5A1300E94869 /* PBXTargetDependency */,
+			);
+			name = ZEBPhotoBrowserTests;
+			productName = ZEBPhotoBrowserTests;
+			productReference = 93593D171E1E5A1300E94869 /* ZEBPhotoBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		93593D211E1E5A1400E94869 /* ZEBPhotoBrowserUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93593D311E1E5A1500E94869 /* Build configuration list for PBXNativeTarget "ZEBPhotoBrowserUITests" */;
+			buildPhases = (
+				93593D1E1E1E5A1400E94869 /* Sources */,
+				93593D1F1E1E5A1400E94869 /* Frameworks */,
+				93593D201E1E5A1400E94869 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93593D241E1E5A1400E94869 /* PBXTargetDependency */,
+			);
+			name = ZEBPhotoBrowserUITests;
+			productName = ZEBPhotoBrowserUITests;
+			productReference = 93593D221E1E5A1400E94869 /* ZEBPhotoBrowserUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93593CF61E1E5A0F00E94869 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "zeb－Apple";
+				TargetAttributes = {
+					93593CFD1E1E5A0F00E94869 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = BY58477G6F;
+						ProvisioningStyle = Automatic;
+					};
+					93593D161E1E5A1300E94869 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 93593CFD1E1E5A0F00E94869;
+					};
+					93593D211E1E5A1400E94869 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 93593CFD1E1E5A0F00E94869;
+					};
+				};
+			};
+			buildConfigurationList = 93593CF91E1E5A0F00E94869 /* Build configuration list for PBXProject "ZEBPhotoBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93593CF51E1E5A0F00E94869;
+			productRefGroup = 93593CFF1E1E5A0F00E94869 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93593CFD1E1E5A0F00E94869 /* ZEBPhotoBrowser */,
+				93593D161E1E5A1300E94869 /* ZEBPhotoBrowserTests */,
+				93593D211E1E5A1400E94869 /* ZEBPhotoBrowserUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93593CFC1E1E5A0F00E94869 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93593D381E1E5A3600E94869 /* Main.storyboard in Resources */,
+				93593D111E1E5A0F00E94869 /* LaunchScreen.storyboard in Resources */,
+				93593D0E1E1E5A0F00E94869 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93593D151E1E5A1300E94869 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93593D201E1E5A1400E94869 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E5546FCBF2FF973CBC34034 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZEBPhotoBrowser/Pods-ZEBPhotoBrowser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87A95DD9D2BA4580DE112AD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZEBPhotoBrowser/Pods-ZEBPhotoBrowser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8994BE2FF7C99356F737B114 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93593CFA1E1E5A0F00E94869 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93593D891E1E5AD300E94869 /* PhotoCell.m in Sources */,
+				93593D841E1E5AC500E94869 /* Photo.m in Sources */,
+				93593D861E1E5AC500E94869 /* ZEBToast.m in Sources */,
+				93593D371E1E5A3600E94869 /* ViewController.m in Sources */,
+				93593D061E1E5A0F00E94869 /* AppDelegate.m in Sources */,
+				93593D791E1E5A5300E94869 /* ZEBPhotoBrowser.m in Sources */,
+				93593D851E1E5AC500E94869 /* UIView+frame.m in Sources */,
+				93593D7A1E1E5A5300E94869 /* ZEBPhotoBrowserCell.m in Sources */,
+				93593D031E1E5A0F00E94869 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93593D131E1E5A1300E94869 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93593D1C1E1E5A1300E94869 /* ZEBPhotoBrowserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93593D1E1E1E5A1400E94869 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93593D271E1E5A1500E94869 /* ZEBPhotoBrowserUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93593D191E1E5A1300E94869 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93593CFD1E1E5A0F00E94869 /* ZEBPhotoBrowser */;
+			targetProxy = 93593D181E1E5A1300E94869 /* PBXContainerItemProxy */;
+		};
+		93593D241E1E5A1400E94869 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93593CFD1E1E5A0F00E94869 /* ZEBPhotoBrowser */;
+			targetProxy = 93593D231E1E5A1400E94869 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93593D0F1E1E5A0F00E94869 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93593D101E1E5A0F00E94869 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93593D291E1E5A1500E94869 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		93593D2A1E1E5A1500E94869 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93593D2C1E1E5A1500E94869 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1851A4509E09A85E73E0E38B /* Pods-ZEBPhotoBrowser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BY58477G6F;
+				INFOPLIST_FILE = ZEBPhotoBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cssy.YQNet.com.ZEBPhotoBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		93593D2D1E1E5A1500E94869 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52C938D57EA031D6F34697EA /* Pods-ZEBPhotoBrowser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BY58477G6F;
+				INFOPLIST_FILE = ZEBPhotoBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cssy.YQNet.com.ZEBPhotoBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		93593D2F1E1E5A1500E94869 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZEBPhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cssy.YQNet.com.ZEBPhotoBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZEBPhotoBrowser.app/ZEBPhotoBrowser";
+			};
+			name = Debug;
+		};
+		93593D301E1E5A1500E94869 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZEBPhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cssy.YQNet.com.ZEBPhotoBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZEBPhotoBrowser.app/ZEBPhotoBrowser";
+			};
+			name = Release;
+		};
+		93593D321E1E5A1500E94869 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZEBPhotoBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cssy.YQNet.com.ZEBPhotoBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZEBPhotoBrowser;
+			};
+			name = Debug;
+		};
+		93593D331E1E5A1500E94869 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZEBPhotoBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cssy.YQNet.com.ZEBPhotoBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZEBPhotoBrowser;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93593CF91E1E5A0F00E94869 /* Build configuration list for PBXProject "ZEBPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93593D291E1E5A1500E94869 /* Debug */,
+				93593D2A1E1E5A1500E94869 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93593D2B1E1E5A1500E94869 /* Build configuration list for PBXNativeTarget "ZEBPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93593D2C1E1E5A1500E94869 /* Debug */,
+				93593D2D1E1E5A1500E94869 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93593D2E1E1E5A1500E94869 /* Build configuration list for PBXNativeTarget "ZEBPhotoBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93593D2F1E1E5A1500E94869 /* Debug */,
+				93593D301E1E5A1500E94869 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93593D311E1E5A1500E94869 /* Build configuration list for PBXNativeTarget "ZEBPhotoBrowserUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93593D321E1E5A1500E94869 /* Debug */,
+				93593D331E1E5A1500E94869 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93593CF61E1E5A0F00E94869 /* Project object */;
+}
