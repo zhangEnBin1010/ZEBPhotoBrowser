@@ -7,6 +7,7 @@
 //  图片model
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Photo : NSObject
 
@@ -21,5 +22,7 @@
 @property (nonatomic, copy) NSString *size; // 原图图片大小
 
 @property (nonatomic, assign) BOOL isDownload; // 原图是否被下载
+
+@property (nonatomic, weak) UIImage *image; // 图片
 
 @end

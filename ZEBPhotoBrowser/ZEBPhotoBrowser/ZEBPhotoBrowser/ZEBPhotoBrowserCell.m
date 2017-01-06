@@ -53,7 +53,7 @@
     [_scrollView addSubview:imageView];
     _imageView = imageView;
     
-    CGFloat w = 100;
+    CGFloat w = 110;
     CGFloat h = 20;
     
     UIButton *OriginalPhotoButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -144,7 +144,20 @@
         self.loadingView.hidden = YES;
     }
     NSInteger photoSize = [_photo.size integerValue];
-    [self.OriginalPhotoButton setTitle:[NSString stringWithFormat:@"查看原图 (%.2fM)",photoSize/(1024.0*1024.0)] forState:UIControlStateNormal];
+    NSString *title = [NSString stringWithFormat:@"查看原图 (%@)",[self transformDataLength:photoSize]];
+    [self.OriginalPhotoButton setTitle:title forState:UIControlStateNormal];
+}
+
+- (NSString *)transformDataLength:(NSInteger)dataLength {
+    NSString *bytes = @"";
+    if (dataLength >= 0.1 * (1024 * 1024)) {
+        bytes = [NSString stringWithFormat:@"%.2fM",dataLength/1024/1024.0];
+    } else if (dataLength >= 1024) {
+        bytes = [NSString stringWithFormat:@"%.1fK",dataLength/1024.0];
+    } else {
+        bytes = [NSString stringWithFormat:@"%zdB",dataLength];
+    }
+    return bytes;
 }
 #pragma mark -
 #pragma mark OriginalPhotoButton

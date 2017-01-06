@@ -10,6 +10,7 @@
 
 typedef void(^ __nullable DismissBlock)(UIImage * __nullable image, NSInteger index);
 typedef void(^ __nullable LongPressBlock)(UIImage * __nullable image);
+typedef void(^ __nullable ImageDownLoadCompleteBlock)(UIImage * __nullable image);
 
 @interface ZEBPhotoBrowser : UIView
 
@@ -51,4 +52,5 @@ typedef void(^ __nullable LongPressBlock)(UIImage * __nullable image);
 
 @property (nonatomic, strong, nullable) UIImage *placeholderImage;
 @property (nonatomic, copy) LongPressBlock longPressBlock;
+@property (nonatomic, copy) ImageDownLoadCompleteBlock downLoadCompleteBlock;
 @end

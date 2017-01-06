@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		360FFD46C5BA76CF811748E4 /* libPods-ZEBPhotoBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC031424846514A3DA521FB3 /* libPods-ZEBPhotoBrowser.a */; };
+		9336B66A1E1F402900571DB5 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9336B6641E1F402900571DB5 /* Photo.m */; };
+		9336B66B1E1F402900571DB5 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9336B6661E1F402900571DB5 /* UIView+frame.m */; };
+		9336B66C1E1F402900571DB5 /* ZEBToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 9336B6691E1F402900571DB5 /* ZEBToast.m */; };
+		9336B66F1E1F414100571DB5 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9336B66E1E1F414100571DB5 /* PhotoCell.m */; };
+		9336B6881E1F671A00571DB5 /* asda.png in Resources */ = {isa = PBXBuildFile; fileRef = 9336B6871E1F671A00571DB5 /* asda.png */; };
 		93593D031E1E5A0F00E94869 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93593D021E1E5A0F00E94869 /* main.m */; };
 		93593D061E1E5A0F00E94869 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93593D051E1E5A0F00E94869 /* AppDelegate.m */; };
 		93593D0E1E1E5A0F00E94869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93593D0D1E1E5A0F00E94869 /* Assets.xcassets */; };
@@ -18,10 +23,6 @@
 		93593D381E1E5A3600E94869 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93593D361E1E5A3600E94869 /* Main.storyboard */; };
 		93593D791E1E5A5300E94869 /* ZEBPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 93593D611E1E5A5300E94869 /* ZEBPhotoBrowser.m */; };
 		93593D7A1E1E5A5300E94869 /* ZEBPhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93593D631E1E5A5300E94869 /* ZEBPhotoBrowserCell.m */; };
-		93593D841E1E5AC500E94869 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 93593D7E1E1E5AC500E94869 /* Photo.m */; };
-		93593D851E1E5AC500E94869 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 93593D801E1E5AC500E94869 /* UIView+frame.m */; };
-		93593D861E1E5AC500E94869 /* ZEBToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 93593D831E1E5AC500E94869 /* ZEBToast.m */; };
-		93593D891E1E5AD300E94869 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93593D881E1E5AD300E94869 /* PhotoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,16 @@
 /* Begin PBXFileReference section */
 		1851A4509E09A85E73E0E38B /* Pods-ZEBPhotoBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZEBPhotoBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZEBPhotoBrowser/Pods-ZEBPhotoBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 		52C938D57EA031D6F34697EA /* Pods-ZEBPhotoBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZEBPhotoBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZEBPhotoBrowser/Pods-ZEBPhotoBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		9336B6631E1F402900571DB5 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		9336B6641E1F402900571DB5 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		9336B6651E1F402900571DB5 /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		9336B6661E1F402900571DB5 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		9336B6671E1F402900571DB5 /* ZEB_const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZEB_const.h; sourceTree = "<group>"; };
+		9336B6681E1F402900571DB5 /* ZEBToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZEBToast.h; sourceTree = "<group>"; };
+		9336B6691E1F402900571DB5 /* ZEBToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZEBToast.m; sourceTree = "<group>"; };
+		9336B66D1E1F414100571DB5 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		9336B66E1E1F414100571DB5 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		9336B6871E1F671A00571DB5 /* asda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asda.png; sourceTree = "<group>"; };
 		93593CFE1E1E5A0F00E94869 /* ZEBPhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZEBPhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93593D021E1E5A0F00E94869 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		93593D041E1E5A0F00E94869 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,15 +75,6 @@
 		93593D611E1E5A5300E94869 /* ZEBPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZEBPhotoBrowser.m; sourceTree = "<group>"; };
 		93593D621E1E5A5300E94869 /* ZEBPhotoBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZEBPhotoBrowserCell.h; sourceTree = "<group>"; };
 		93593D631E1E5A5300E94869 /* ZEBPhotoBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZEBPhotoBrowserCell.m; sourceTree = "<group>"; };
-		93593D7D1E1E5AC500E94869 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
-		93593D7E1E1E5AC500E94869 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
-		93593D7F1E1E5AC500E94869 /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
-		93593D801E1E5AC500E94869 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
-		93593D811E1E5AC500E94869 /* ZEB_const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZEB_const.h; sourceTree = "<group>"; };
-		93593D821E1E5AC500E94869 /* ZEBToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZEBToast.h; sourceTree = "<group>"; };
-		93593D831E1E5AC500E94869 /* ZEBToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZEBToast.m; sourceTree = "<group>"; };
-		93593D871E1E5AD300E94869 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
-		93593D881E1E5AD300E94869 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
 		FC031424846514A3DA521FB3 /* libPods-ZEBPhotoBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZEBPhotoBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9336B6621E1F402900571DB5 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				9336B6631E1F402900571DB5 /* Photo.h */,
+				9336B6641E1F402900571DB5 /* Photo.m */,
+				9336B6651E1F402900571DB5 /* UIView+frame.h */,
+				9336B6661E1F402900571DB5 /* UIView+frame.m */,
+				9336B6671E1F402900571DB5 /* ZEB_const.h */,
+				9336B6681E1F402900571DB5 /* ZEBToast.h */,
+				9336B6691E1F402900571DB5 /* ZEBToast.m */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
 		93593CF51E1E5A0F00E94869 = {
 			isa = PBXGroup;
 			children = (
@@ -127,9 +143,8 @@
 		93593D001E1E5A0F00E94869 /* ZEBPhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				93593D871E1E5AD300E94869 /* PhotoCell.h */,
-				93593D881E1E5AD300E94869 /* PhotoCell.m */,
-				93593D7C1E1E5AC500E94869 /* tool */,
+				9336B66D1E1F414100571DB5 /* PhotoCell.h */,
+				9336B66E1E1F414100571DB5 /* PhotoCell.m */,
 				93593D391E1E5A5300E94869 /* ZEBPhotoBrowser */,
 				93593D041E1E5A0F00E94869 /* AppDelegate.h */,
 				93593D051E1E5A0F00E94869 /* AppDelegate.m */,
@@ -147,6 +162,7 @@
 		93593D011E1E5A0F00E94869 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9336B6871E1F671A00571DB5 /* asda.png */,
 				93593D021E1E5A0F00E94869 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -173,26 +189,13 @@
 		93593D391E1E5A5300E94869 /* ZEBPhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				9336B6621E1F402900571DB5 /* tool */,
 				93593D601E1E5A5300E94869 /* ZEBPhotoBrowser.h */,
 				93593D611E1E5A5300E94869 /* ZEBPhotoBrowser.m */,
 				93593D621E1E5A5300E94869 /* ZEBPhotoBrowserCell.h */,
 				93593D631E1E5A5300E94869 /* ZEBPhotoBrowserCell.m */,
 			);
 			path = ZEBPhotoBrowser;
-			sourceTree = "<group>";
-		};
-		93593D7C1E1E5AC500E94869 /* tool */ = {
-			isa = PBXGroup;
-			children = (
-				93593D7D1E1E5AC500E94869 /* Photo.h */,
-				93593D7E1E1E5AC500E94869 /* Photo.m */,
-				93593D7F1E1E5AC500E94869 /* UIView+frame.h */,
-				93593D801E1E5AC500E94869 /* UIView+frame.m */,
-				93593D811E1E5AC500E94869 /* ZEB_const.h */,
-				93593D821E1E5AC500E94869 /* ZEBToast.h */,
-				93593D831E1E5AC500E94869 /* ZEBToast.m */,
-			);
-			path = tool;
 			sourceTree = "<group>";
 		};
 		960C082FFB45A95472063361 /* Pods */ = {
@@ -322,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9336B6881E1F671A00571DB5 /* asda.png in Resources */,
 				93593D381E1E5A3600E94869 /* Main.storyboard in Resources */,
 				93593D111E1E5A0F00E94869 /* LaunchScreen.storyboard in Resources */,
 				93593D0E1E1E5A0F00E94869 /* Assets.xcassets in Resources */,
@@ -397,13 +401,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93593D891E1E5AD300E94869 /* PhotoCell.m in Sources */,
-				93593D841E1E5AC500E94869 /* Photo.m in Sources */,
-				93593D861E1E5AC500E94869 /* ZEBToast.m in Sources */,
+				9336B66F1E1F414100571DB5 /* PhotoCell.m in Sources */,
+				9336B66B1E1F402900571DB5 /* UIView+frame.m in Sources */,
+				9336B66A1E1F402900571DB5 /* Photo.m in Sources */,
 				93593D371E1E5A3600E94869 /* ViewController.m in Sources */,
 				93593D061E1E5A0F00E94869 /* AppDelegate.m in Sources */,
 				93593D791E1E5A5300E94869 /* ZEBPhotoBrowser.m in Sources */,
-				93593D851E1E5AC500E94869 /* UIView+frame.m in Sources */,
+				9336B66C1E1F402900571DB5 /* ZEBToast.m in Sources */,
 				93593D7A1E1E5A5300E94869 /* ZEBPhotoBrowserCell.m in Sources */,
 				93593D031E1E5A0F00E94869 /* main.m in Sources */,
 			);

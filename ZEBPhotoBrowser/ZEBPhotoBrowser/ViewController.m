@@ -53,8 +53,14 @@
         cell.imageView.image = self.images[indexPath.row];
     }
     else {
-        NSDictionary *dict = _URLStrings[indexPath.row];
-        [cell.imageView sd_setImageWithURL:dict[@"thumbnailUrl"]];
+        if ([_URLStrings[indexPath.row] isKindOfClass:[NSDictionary class]]) {
+            NSDictionary *dict = _URLStrings[indexPath.row];
+           [cell.imageView sd_setImageWithURL:dict[@"thumbnailUrl"]];
+        }else {
+            cell.imageView.image = _URLStrings[indexPath.row];
+        }
+        
+        
     }
     
     return cell;
@@ -66,10 +72,23 @@
     
     PhotoCell *cell = (PhotoCell *)[collectionView cellForItemAtIndexPath:indexPath];
     if (_localImage) {
-        [ZEBPhotoBrowser showFromImageView:cell.imageView withImages:self.originalImages atIndex:indexPath.row];
+        ZEBPhotoBrowser *browser = [ZEBPhotoBrowser showFromImageView:cell.imageView withImages:self.originalImages atIndex:indexPath.row];
+        // __weak typeof(self) weakSelf = self;
+        browser.longPressBlock=^(UIImage *image){
+        };
+        browser.downLoadCompleteBlock = ^(UIImage *image) {
+            
+        };
     }
     else {
-        [ZEBPhotoBrowser showFromImageView:cell.imageView withURLStrings:_URLStrings placeholderImage:[UIImage imageNamed:@"placeholder"] atIndex:indexPath.row dismiss:nil];
+        ZEBPhotoBrowser *browser = [ZEBPhotoBrowser showFromImageView:cell.imageView withURLStrings:_URLStrings placeholderImage:[UIImage imageNamed:@"placeholder"] atIndex:indexPath.row dismiss:nil];
+       // __weak typeof(self) weakSelf = self;
+        browser.longPressBlock=^(UIImage *image){
+                   };
+        browser.downLoadCompleteBlock = ^(UIImage *image) {
+         
+        };
+
     }
 }
 
@@ -100,32 +119,42 @@
 //            
 //            [urlS addObject:linkurl];
 //        }
-        NSArray *arr = @[@"http://112.74.129.54/tax00/M00/03/00/QUIPAFhrFr2AGq9gAHpmYv-oGuI491.JPG?type=1&width=10&height=10&size=8021602",@"http://112.74.129.54/tax00/M00/03/00/QUIPAFhrFr2AGq9gAHpmYv-oGuI491.JPG?type=1&width=10&height=10&size=8021602"];
-        [_URLStrings addObjectsFromArray:[self getArray:arr]];
+        NSArray *arr = @[@"http://112.74.129.54/tax00/M00/03/00/QUIPAFhrFr2AGq9gAHpmYv-oGuI491.JPG?type=1&width=10&height=10&size=8021602",@"http://112.74.129.54/tax00/M00/03/00/QUIPAFhrFr2AGq9gAHpmYv-oGuI491.JPG?type=1&width=10&height=10&size=8021602",[UIImage imageNamed:@"asda"],[UIImage imageNamed:@"asda"]];
+        [_URLStrings addObjectsFromArray:[self getImageArray:arr]];
      [self.collectionView reloadData];
 
         
 //    }];
 //    [task resume];
 }
-- (NSArray *)getArray:(NSArray *)arr {
-
+- (NSArray *)getImageArray:(NSArray *)arr {
     
     NSMutableArray *tempArr = [NSMutableArray array];
-    for (NSString *string in arr) {
-        NSMutableDictionary *parm = [NSMutableDictionary dictionary];
-        if ([string containsString:@"?type=1"]) {
-          NSArray *arr = [string componentsSeparatedByString:@"?"];
-            NSArray *sizeArr = [string componentsSeparatedByString:@"&"];
-            NSString *size = [sizeArr lastObject];
-            size = [size substringFromIndex:5];
-            [parm setObject:[arr firstObject] forKey:@"originalUrl"];
-            [parm setObject:string forKey:@"thumbnailUrl"];
-            [parm setObject:size forKey:@"size"];
-        }else {
-            [parm setObject:string forKey:@"thumbnailUrl"];
+    for (id what in arr) {
+        if ([what isKindOfClass:[NSString class]]) {
+            NSString *string = (NSString *)what;
+            NSMutableDictionary *parm = [NSMutableDictionary dictionary];
+            if ([string containsString:@"?type=1"]) {
+                NSArray *arr = [string componentsSeparatedByString:@"?"];
+                NSString *parameterString = [arr lastObject];
+                NSArray *sizeArr = [parameterString componentsSeparatedByString:@"&"];
+                [parm setObject:[arr firstObject] forKey:@"originalUrl"];
+                [parm setObject:string forKey:@"thumbnailUrl"];
+                for (NSString *str in sizeArr) {
+                    if ([str containsString:@"size"]) {
+                        [parm setObject:[str substringFromIndex:5] forKey:@"size"];
+                        break;
+                    }
+                }
+                
+            }else {
+                [parm setObject:string forKey:@"thumbnailUrl"];
+            }
+            [tempArr addObject:parm];
+        }else if ([what isKindOfClass:[UIImage class]]){
+            [tempArr addObject:(UIImage *)what];
         }
-        [tempArr addObject:parm];
+        
     }
     return tempArr;
 }
